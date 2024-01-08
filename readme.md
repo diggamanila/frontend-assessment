@@ -14,12 +14,6 @@ npm install
 npm run dev
 ```
 
-### Run the application
-
-```sh
-npm run dev
-```
-
 ### Summary of work
 
 Assumptions:
