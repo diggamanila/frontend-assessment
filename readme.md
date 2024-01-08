@@ -1,40 +1,56 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries, but Vue.js is preferred and jQuery is not recommended. Along with following best practices, bonus points for following our [coding guidelines](https://github.com/mindarc/frontend-assessment/wiki/Coding-guidelines). 
+# MindArc Frontend Assessment
+
+## Project Setup
+
+### Install dependencies
+
+```sh
+npm install
+```
+
+### Compile and start dev server
+
+```sh
+npm run dev
+```
+
+### Run the application
+
+```sh
+npm run dev
+```
+
+### Summary of work
+
+Assumptions:
+
+- Mobile viewport is anything < 992px
+- Added navbar containing links to the exercise pages for demo purposes
 
 Exercise 1
----
-Build a responsive page based on the designs.
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
-
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
-
-##### Assets
-* Desktop banner - https://via.placeholder.com/1920x650
-* Mobile banner - https://via.placeholder.com/600x600
-* Content images - https://via.placeholder.com/400x300
+- Developed the page to match the designs with responsive behaviour
 
 Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
 
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
+- Data is displayed in Tabs on Desktop and Accordion on Mobile
+- Only 1 accordion/tab can be opened at a time
+- First accordion/tab is open on load
+- Clicking an open accordion panel will close it
 
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
+Bonus
 
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+- Added simple animations, transitions, design and styling
+- Explanation on why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana:
+
+'b' + 'a' + + 'a' + 'a' is evaluated as 'b' + 'a' + (+ 'a') + 'a' based on operator precedence <br>
+
+(+ 'a') has a unary plus operator that converts 'a' to Number type<br>
+
+Since 'a' is not a number, the result is NaN which is still a numeric type: 'b' + 'a' + NaN + 'a'<br>
+
+When it is added to strings, it concatenates like any number would: 'baNaNa'<br>
+
+Hence, the final result in lowercase is 'banana'
+
+For further questions, email darlene.garperio@gmail.com
